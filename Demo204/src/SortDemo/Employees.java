@@ -1,0 +1,32 @@
+package SortDemo;
+
+public class Employees implements Comparable<Employees>
+{
+	int empID;
+	String empName;
+	String empJobID;
+	double empSalary;
+	
+	public Employees(int empID, String empName, String empJobID, double empSalary) {
+		super();
+		this.empID = empID;
+		this.empName = empName;
+		this.empJobID = empJobID;
+		this.empSalary = empSalary;
+	}
+
+	@Override
+	public String toString() {
+		return "Employees [empID=" + empID + ", empName=" + empName + ", empJobID=" + empJobID + ", empSalary="
+				+ empSalary + "]";
+	}
+
+	@Override
+	public int compareTo(Employees o) {
+		// TODO Auto-generated method stub
+		return Double.compare(this.empSalary, o.empSalary);
+	}
+
+	
+	
+}
