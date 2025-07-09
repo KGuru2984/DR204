@@ -1,0 +1,7 @@
+package StreamsDemo;
+
+@FunctionalInterface
+public interface Example 
+{
+	void add(int n1,int n2);
+}

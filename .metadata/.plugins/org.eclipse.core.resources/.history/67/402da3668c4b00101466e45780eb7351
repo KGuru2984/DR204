@@ -1,0 +1,26 @@
+package OOPSDemo;
+
+public class FunctionDemo1 {
+
+	public void addNumbers(float num1,float num2)
+	{
+		float result=num1 + num2;
+		System.out.println("Result of Addition:"+result);
+		
+	}
+	
+	public int addNumbers(int num1,int num2)
+	{
+		return num1+num2;
+	}
+	
+	public int addNumbers(int num1,int num2, int num3)
+	{
+		return num1+num2+num3;
+	}
+	
+	public void addNumbers(float num1,int num2)
+	{
+		System.out.println(num1+num2);
+	}
+}

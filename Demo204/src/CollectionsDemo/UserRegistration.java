@@ -1,0 +1,27 @@
+package CollectionsDemo;
+
+public class UserRegistration {
+
+	int userID;
+	String userName;
+	String userPassword;
+	long userContactNo;
+	char useFlag;
+	
+	public UserRegistration(int userID, String userName, String userPassword, long userContactNo, char useFlag) {
+		super();
+		this.userID = userID;
+		this.userName = userName;
+		this.userPassword = userPassword;
+		this.userContactNo = userContactNo;
+		this.useFlag = useFlag;
+	}
+
+	@Override
+	public String toString() {
+		return "UserRegistration [userID=" + userID + ", userName=" + userName + ", userPassword=" + userPassword
+				+ ", userContactNo=" + userContactNo + ", useFlag=" + useFlag + "]";
+	}
+	
+	
+}

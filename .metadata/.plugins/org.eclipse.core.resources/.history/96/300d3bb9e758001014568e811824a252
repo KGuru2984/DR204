@@ -1,0 +1,5 @@
+package StreamsDemo;
+
+public interface Example2 {
+
+}

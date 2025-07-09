@@ -1,0 +1,16 @@
+package DemoProject;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+public class EmployeeMainClass {
+public static void main(String[] args) throws SQLException {
+	
+	List<EmployeeClass> l1=new ArrayList<EmployeeClass>();
+	Connection cn=DemoDBConfig.getDBConnection();
+}
+}

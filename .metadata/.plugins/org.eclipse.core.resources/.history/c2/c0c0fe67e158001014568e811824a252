@@ -1,0 +1,10 @@
+package ExceptionDemo;
+
+public class InvalidAgeException 
+{
+	public InvalidAgeException(String message)
+	{
+		
+	}
+
+}

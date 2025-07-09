@@ -1,0 +1,17 @@
+package OOPSDemo;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ExampleClass obj=new ExampleClass();
+		
+		System.out.println(obj.age);
+		System.out.println(obj.name);
+		
+		int c;
+		System.out.println(c);
+	}
+
+}

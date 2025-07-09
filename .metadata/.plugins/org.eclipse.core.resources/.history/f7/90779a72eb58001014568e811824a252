@@ -1,0 +1,18 @@
+package StreamsDemo;
+
+
+import java.util.Arrays;
+import java.util.List;
+
+public class StreamDemo1 {
+public static void main(String[] args) {
+	
+	//Step 1 - To have a collection list
+	List<String> l1=Arrays.asList("Ankit","Rupesh","Anil","Ashok","Bilal","Devdas","Sunil","Inayat");
+	
+	//Step 2 - To convert collection list to streams
+	
+	
+	
+}
+}

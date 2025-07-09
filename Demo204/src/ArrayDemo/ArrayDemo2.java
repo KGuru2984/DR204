@@ -1,0 +1,25 @@
+package ArrayDemo;
+
+public class ArrayDemo2 {
+	public static void main(String[] args) {
+		
+		String s1="Hello";
+		
+		char ch[]=s1.toCharArray();
+		
+		//System.out.println(ch.length);
+		
+		for(int i=(ch.length)-1; i>=0;i-- )
+		{
+			System.out.print(ch[i]);
+		}
+		System.out.println("");
+		
+		StringBuffer sb=new StringBuffer(s1);
+		System.out.println(sb.reverse());
+		
+		StringBuilder sd=new StringBuilder(s1);
+		System.out.println(sd.reverse());
+		
+	}
+}

@@ -1,0 +1,12 @@
+package OOPSDemo;
+
+public class PersonalInfo {
+	
+	// data members
+	
+	int id;
+	String fullname;
+	String email;
+	long contactno;
+	int age;
+}

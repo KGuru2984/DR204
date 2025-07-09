@@ -1,0 +1,7 @@
+package OOPSDemo;
+
+public class MainFunctionClass {
+public static void main(String[] args) {
+	
+}
+}

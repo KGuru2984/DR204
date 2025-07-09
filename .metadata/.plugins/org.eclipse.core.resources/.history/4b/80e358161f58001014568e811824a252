@@ -1,0 +1,25 @@
+package ExceptionDemo;
+
+import java.util.Scanner;
+
+public class ExceptionDemo2 {
+public static void main(String[] args) {
+	
+	Scanner sc =new Scanner(System.in);
+	
+	System.out.println("Enter your age:");
+	int age=sc.nextInt();
+	sc.nextLine();
+	
+	
+	if(age<18)
+	{
+		throw new ArithmeticException("Your age is less than 18 years....");
+	}
+	else
+	{
+		System.out.println("You have win the race......");
+	}
+	
+}
+}

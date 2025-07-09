@@ -1,0 +1,35 @@
+package DemoProject;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+public class EmployeeMainClass {
+public static void main(String[] args) throws SQLException {
+	
+	List<EmployeeClass> l1=new ArrayList<EmployeeClass>();
+	Connection cn=DemoDBConfig.getDBConnection();
+	
+	PreparedStatement pst= cn.prepareStatement("select * from employee");
+	ResultSet rs=pst.executeQuery();
+	
+	while(rs.next())
+	{
+		l1.add(new EmployeeClass(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getBigDecimal(5)));
+	}
+	
+	cn.close();
+	
+	for(EmployeeClass e:l1)
+	{
+		System.out.println(e.toString());
+	}
+	
+	
+}
+}

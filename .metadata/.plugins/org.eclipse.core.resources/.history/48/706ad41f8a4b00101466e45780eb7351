@@ -1,0 +1,11 @@
+package OOPSDemo;
+
+public class FunctionDemo1 {
+
+	public void addNumbers(int num1,int num2)
+	{
+		int result=num1 + num2;
+		System.out.println("Result of Addition:"+result);
+		
+	}
+}

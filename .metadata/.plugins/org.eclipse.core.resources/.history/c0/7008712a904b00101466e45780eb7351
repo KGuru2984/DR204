@@ -1,0 +1,13 @@
+package OOPSDemo;
+
+public class ExampleClass {
+
+	String name;
+	int age;
+	
+//	public ExampleClass(String s, int x)
+//	{
+//		name=s;
+//		age=x;
+//	}
+}

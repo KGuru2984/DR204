@@ -1,0 +1,25 @@
+package ExceptionDemo;
+
+import java.util.Optional;
+
+public class OptionalMain {
+public static void main(String[] args) {
+	
+	Customer c=new Customer();
+	
+	Optional<String> obj=Optional.ofNullable(c.custname);
+	
+	obj.orElse("Guest No Value Assigned");
+	//System.out.println(s);
+	if(obj.isPresent())
+	{
+		System.out.println(c.custname);
+	}
+	else
+	{
+		System.out.println("Value is not there");
+	}
+	
+	
+}
+}

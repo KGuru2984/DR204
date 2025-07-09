@@ -1,0 +1,14 @@
+package DemoProject;
+
+import java.math.BigDecimal;
+
+public class EmployeeClass 
+{
+    private int empId;
+    private String empName;
+    private String departmentName;
+    private String jobId;
+    private BigDecimal salary; 
+    
+    
+}

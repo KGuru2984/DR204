@@ -1,0 +1,5 @@
+package DemoProject;
+
+public interface DemoDBConfig {
+
+}

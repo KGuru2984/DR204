@@ -1,0 +1,31 @@
+package CollectionsDemo;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+public class Demo1List {
+	public static void main(String[] args) {
+		
+		List<Integer> l1=new ArrayList<Integer>();
+		l1.add(10);
+		l1.add(20);
+		l1.add(30);
+		
+		System.out.println(l1);
+		System.out.println(l1.size());
+		l1.add(50);
+				
+		System.out.println(l1);
+		
+		System.out.println(l1.size());
+		
+		System.out.println(l1.isEmpty());
+		
+		l1.clear();
+		
+		System.out.println(l1.isEmpty());
+	}
+	
+
+}

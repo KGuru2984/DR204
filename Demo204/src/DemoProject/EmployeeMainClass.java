@@ -1,0 +1,60 @@
+package DemoProject;
+
+import java.math.BigDecimal;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+
+
+public class EmployeeMainClass {
+public static void main(String[] args) throws SQLException {
+	
+	List<EmployeeClass> l1=new ArrayList<EmployeeClass>();
+	Connection cn=DemoDBConfig.getDBConnection();
+	
+	PreparedStatement pst= cn.prepareStatement("select * from employee");
+	ResultSet rs=pst.executeQuery();
+	
+	while(rs.next())
+	{
+		l1.add(new EmployeeClass(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getBigDecimal(5)));
+	}
+	
+	cn.close();
+	
+	for(EmployeeClass e:l1)
+	{
+		System.out.println(e.toString());
+	}
+	
+//	Map<String, BigDecimal> m1=l1.stream().collect(Collectors.groupingBy(EmployeeClass::getDepartmentName,Collectors.reducing(BigDecimal.ZERO,EmployeeClass::getSalary,BigDecimal::add)));
+//	
+//	m1.forEach((dept,cnt) -> System.out.println(dept+"  ->   "+cnt));
+//	
+//	BigDecimal result=l1.stream().map(EmployeeClass::getSalary).reduce(BigDecimal.ZERO,BigDecimal::add);
+//	
+//	System.out.println(result);
+//	
+//	System.out.println(l1);
+//	Collections.sort(l1);
+//	
+//	System.out.println(l1);
+	
+	BigDecimal bd= l1.stream().map(EmployeeClass::getSalary).reduce(BigDecimal.ZERO,BigDecimal::add);
+	System.out.println(bd);
+	
+	Map<String, Long> m1=l1.stream().collect(Collectors.groupingBy(EmployeeClass::getDepartmentName,Collectors.counting()));
+	m1.forEach((dept,cntemp)-> System.out.println(dept+"   ->   "+cntemp));
+	
+	Map<String,BigDecimal> md= l1.stream().collect(Collectors.groupingBy(EmployeeClass::getDepartmentName,Collectors.reducing(BigDecimal.ZERO,EmployeeClass::getSalary,BigDecimal::add)));
+	md.forEach((dept,sal) -> System.out.println(dept +"  ->   "+sal));
+}
+}

@@ -1,0 +1,15 @@
+package OOPSDemo;
+
+public class MainFunctionClass {
+public static void main(String[] args) {
+	
+	FunctionDemo1 obj=new FunctionDemo1();
+	int result;
+	
+	result=obj.addNumbers(10, 30);
+	System.out.println("Result value:"+result);
+	obj.addNumbers(30, 90);
+	obj.addNumbers(100, 400);
+	
+}
+}

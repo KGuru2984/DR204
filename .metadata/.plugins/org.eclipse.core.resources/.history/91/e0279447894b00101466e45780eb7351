@@ -1,0 +1,9 @@
+package OOPSDemo;
+
+public class FunctionDemo1 {
+
+	public void addNumbers(int num1,int num2)
+	{
+		
+	}
+}

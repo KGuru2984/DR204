@@ -1,0 +1,5 @@
+package GenericDemo;
+
+public interface GenericDemo1 {
+
+}

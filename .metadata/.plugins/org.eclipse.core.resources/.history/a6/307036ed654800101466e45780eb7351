@@ -1,0 +1,39 @@
+package OOPSDemo;
+
+import java.util.Scanner;
+
+public class CustomerClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		PersonalInfo customer1=new PersonalInfo();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Customer Id:");
+		customer1.id=sc.nextInt();
+		sc.nextLine();
+		
+		System.out.println("Enter Customer Name:");
+		customer1.fullname=sc.nextLine();
+		
+		System.out.println("Enter Customer Age:");
+		customer1.age=sc.nextInt();
+		sc.nextLine();
+		
+		System.out.println("Enter Customer Contact No:");
+		customer1.contactno=sc.nextLong();
+		sc.nextLine();
+		
+		System.out.println("Enter Customer Email ID:");
+		customer1.email=sc.nextLine();
+		
+		
+		
+		System.out.println("Customer ID:"+customer1.id);
+		System.out.println("Customer Name:"+ customer1.fullname);
+		System.out.println("Customer Age:"+customer1.age);
+		System.out.println("Customer Contact No:"+customer1.contactno);
+		System.out.println("Customer Email ID:"+customer1.email);
+	}
+
+}

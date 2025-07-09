@@ -1,0 +1,10 @@
+package CollectionsDemo;
+
+public class UserRegistration {
+
+	int userID;
+	String userName;
+	String userPassword;
+	long userContactNo;
+	char useFlag;
+}

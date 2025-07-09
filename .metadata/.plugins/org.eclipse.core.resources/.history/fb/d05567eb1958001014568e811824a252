@@ -1,0 +1,18 @@
+package ExceptionDemo;
+
+public class MainExample {
+public static void main(String[] args) {
+	
+	Customer c=new Customer();
+	try
+	{
+	System.out.println(c.custname.length());
+	}
+	catch(NullPointerException e)
+	{
+		System.out.println("Null value , length can 't be used");
+	}
+	
+	System.out.println("Hello");
+}
+}

@@ -1,0 +1,17 @@
+package CollectionsDemo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class UserRegistrationMainClass {
+public static void main(String[] args) {
+	
+	List<UserRegistration> users=new ArrayList<UserRegistration>();
+	UserRegistration user1=new UserRegistration(1, "ITVedant","Pass123", 1234567890, 'Y');
+	users.add(user1);
+	UserRegistration user2=new UserRegistration(2, "Gurunath", "rakesh123", 1234567898, 'Y');
+	//user.add(new UserRegistration(1, "ITVedant", "pass123", 1234567890, 'Y'));
+	
+	
+}
+}

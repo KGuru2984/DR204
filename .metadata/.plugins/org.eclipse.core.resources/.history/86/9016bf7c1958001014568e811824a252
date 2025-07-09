@@ -1,0 +1,10 @@
+package ExceptionDemo;
+
+public class MainExample {
+public static void main(String[] args) {
+	
+	Customer c=new Customer();
+	
+	
+}
+}

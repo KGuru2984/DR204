@@ -1,0 +1,17 @@
+package ExceptionDemo;
+
+public class AgeValidator {
+	
+	public void checkAge(int age) throws ArithmeticException
+	{
+		if(age<18)
+		{
+			throw new ArithmeticException("Age is not greater than equals to 18");
+		}
+		else
+		{
+			System.out.println("Welcome!");
+		}
+	}
+
+}

@@ -1,0 +1,33 @@
+package ArrayDemo;
+
+import java.util.Scanner;
+
+public class ArrayDemo1 {
+public static void main(String[] args) {
+	
+	Scanner sc=new Scanner(System.in);
+	int sum=0;
+	
+	int student_subjects[][]=new int[5][5];
+	double student_average[]=new double[5];
+	for(int j=0;j<5;j++)
+	{
+		System.out.println("Enter Subject Marks for Learner "+(j+1));
+		sum=0;
+		for(int i=0;i<5;i++)
+		{
+			System.out.println("Enter Marks for Subject "+(i+1));
+			student_subjects[j][i]=sc.nextInt();
+			sum=sum+student_subjects[j][i];
+		}
+		student_average[j]=sum/5;
+	
+	}
+
+	for(int x=0;x<5; x++)
+	{
+		System.out.println("The Average of Learner "+ (x+1) +" : "+ student_average[x]);
+	}
+	
+}
+}

@@ -1,0 +1,10 @@
+package ExceptionDemo;
+
+public class AgeMainClass {
+public static void main(String[] args) {
+	
+	AgeValidator ag=new AgeValidator();
+	
+	ag.checkAge(5);
+}
+}
